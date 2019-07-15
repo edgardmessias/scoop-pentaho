@@ -17,6 +17,7 @@
         ]
     ],
     "pre_install": [
+        "if (!$url) { $url = \"$(manifest_path $app $bucket)\" }",
         "$icon = $url -replace '.json$', '.ico'",
         "Copy-Item \"$icon\" \"$dir\\icon.ico\""
     ],
