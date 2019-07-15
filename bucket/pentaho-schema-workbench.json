@@ -3,14 +3,8 @@
     "description": "The Pentaho Schema Workbench is a designer interface that allows you to create and test Mondrian OLAP cube schemas visually.",
     "license": "EPL-1.0",
     "version": "8.3.0.0-371",
-    "url": [
-        "https://downloads.sourceforge.net/project/pentaho/Pentaho%208.3/client-tools/psw-ce-8.3.0.0-371.zip",
-        "https://gist.githubusercontent.com/edgardmessias/13b3ed8b356a7bc5bc113f7a1a8ede35/raw/psw.ico"
-    ],
-    "hash": [
-        "sha1:193849e8d9ac36ddc7de45133a111570a14289e2",
-        "sha1:b020dbf77ccd048f35de8bb331130996a93532eb"
-    ],
+    "url": "https://downloads.sourceforge.net/project/pentaho/Pentaho%208.3/client-tools/psw-ce-8.3.0.0-371.zip",
+    "hash": "sha1:193849e8d9ac36ddc7de45133a111570a14289e2",
     "extract_dir": "schema-workbench",
     "bin": "workbench.bat",
     "shortcuts": [
@@ -18,12 +12,16 @@
             "workbench.bat",
             "Pentaho Schema Workbench (PSW)",
             "",
-            "psw.ico"
+            "icon.ico"
         ]
     ],
     "persist": [
         "drivers",
         "plugins"
+    ],
+    "pre_install": [
+        "$icon = $url -replace '.json$', '.ico'",
+        "Copy-Item \"$icon\" \"$dir\\icon.ico\""
     ],
     "post_install": [
         "$file = \"$dir\\workbench.bat\"",
