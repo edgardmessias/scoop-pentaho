@@ -1,0 +1,34 @@
+{
+    "homepage": "https://pentaho.sourceforge.io/",
+    "version": "8.3.0.0-371",
+    "url": "https://downloads.sourceforge.net/project/pentaho/Pentaho%208.3/client-tools/pdi-ce-8.3.0.0-371.zip#dl.7z",
+    "hash": "sha1:7e0039807b5651dd1229c77eb17402e5cdc22f1e",
+    "extract_dir": "data-integration",
+    "bin": [
+        "Carte.bat",
+        "Kitchen.bat",
+        "Pan.bat",
+        "Spoon.bat",
+        "SpoonConsole.bat",
+        "SpoonDebug.bat"
+    ],
+    "shortcuts": [
+        [
+            "Spoon.bat",
+            "Pentaho Data Integration (PDI)",
+            "",
+            "spoon.ico"
+        ]
+    ],
+    "checkver": {
+        "url": "https://sourceforge.net/projects/pentaho/rss?path=/",
+        "regex": "Pentaho\\s+[\\d.]+/client-tools/pdi-ce-([\\w.-]+)\\.zip"
+    },
+    "autoupdate": {
+        "url": "https://downloads.sourceforge.net/project/pentaho/Pentaho%20$majorVersion.$minorVersion/client-tools/pdi-ce-$version.zip#dl.7z",
+        "hash": {
+            "url": "$url.sum",
+            "regex": "SHA1=$sha1"
+        }
+    }
+}
