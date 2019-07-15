@@ -1,2 +1,10 @@
+* text=auto
+
 # retain windows line-endings in case checked out on mac or linux
-* text eol=crlf
+*.json text eol=crlf
+*.md text eol=crlf
+*.ps1 text eol=crlf
+*.yml text eol=crlf
+
+# these files are binary and should be left untouched
+*.ico binary
