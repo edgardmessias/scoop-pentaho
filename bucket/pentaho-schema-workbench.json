@@ -2,9 +2,9 @@
     "homepage": "https://pentaho.sourceforge.io/",
     "description": "The Pentaho Schema Workbench is a designer interface that allows you to create and test Mondrian OLAP cube schemas visually.",
     "license": "EPL-1.0",
-    "version": "8.3.0.0-371",
-    "url": "https://downloads.sourceforge.net/project/pentaho/Pentaho%208.3/client-tools/psw-ce-8.3.0.0-371.zip",
-    "hash": "sha1:193849e8d9ac36ddc7de45133a111570a14289e2",
+    "version": "9.0.0.0-423",
+    "url": "https://downloads.sourceforge.net/project/pentaho/Pentaho%209.0/client-tools/psw-ce-9.0.0.0-423.zip",
+    "hash": "sha1:b15723564dcf6c71ec670512acc641797f59f9e9",
     "extract_dir": "schema-workbench",
     "bin": "workbench.bat",
     "shortcuts": [
@@ -36,10 +36,6 @@
         "re": "Pentaho\\s+[\\d.]+/client-tools/psw-ce-([\\w.-]+)\\.zip"
     },
     "autoupdate": {
-        "url": "https://downloads.sourceforge.net/project/pentaho/Pentaho%20$majorVersion.$minorVersion/client-tools/psw-ce-$version.zip",
-        "hash": {
-            "url": "$url.sum",
-            "regex": "SHA1=$sha1"
-        }
+        "url": "https://downloads.sourceforge.net/project/pentaho/Pentaho%20$majorVersion.$minorVersion/client-tools/psw-ce-$version.zip"
     }
 }

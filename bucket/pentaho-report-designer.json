@@ -3,9 +3,9 @@
     "homepage": "https://pentaho.sourceforge.io/",
     "description": "Pentaho Report Designer is a sophisticated report creation tool that you can use standalone, or as part of the larger Pentaho Business Analytics distribution.",
     "license": "GPL-2.0-only|LGPL-2.0-only|MPL-1.1",
-    "version": "8.3.0.0-371",
-    "url": "https://downloads.sourceforge.net/project/pentaho/Pentaho%208.3/client-tools/prd-ce-8.3.0.0-371.zip#dl.7z",
-    "hash": "sha1:e9216721f6f30f35d7c745898d1180bec8f1329a",
+    "version": "9.0.0.0-423",
+    "url": "https://downloads.sourceforge.net/project/pentaho/Pentaho%209.0/client-tools/prd-ce-9.0.0.0-423.zip#dl.7z",
+    "hash": "sha1:b9e4428b3613f1296217a010afe11261b746965c",
     "extract_dir": "report-designer",
     "bin": "report-designer.bat",
     "shortcuts": [
@@ -27,10 +27,6 @@
         "re": "Pentaho\\s+[\\d.]+/client-tools/prd-ce-([\\w.-]+)\\.zip"
     },
     "autoupdate": {
-        "url": "https://downloads.sourceforge.net/project/pentaho/Pentaho%20$majorVersion.$minorVersion/client-tools/prd-ce-$version.zip#dl.7z",
-        "hash": {
-            "url": "$url.sum",
-            "regex": "SHA1=$sha1"
-        }
+        "url": "https://downloads.sourceforge.net/project/pentaho/Pentaho%20$majorVersion.$minorVersion/client-tools/prd-ce-$version.zip#dl.7z"
     }
 }

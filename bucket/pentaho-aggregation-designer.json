@@ -2,9 +2,9 @@
     "homepage": "https://pentaho.sourceforge.io/",
     "description": "The Pentaho Aggregation Designer simplifies the creation and deployment of aggregate tables that improve the performance of your Pentaho Analysis (Mondrian) OLAP cubes.",
     "license": "GPL-2.0-only|LGPL-2.0-only|MPL-1.1",
-    "version": "8.3.0.0-371",
-    "url": "https://downloads.sourceforge.net/project/pentaho/Pentaho%208.3/client-tools/pad-ce-8.3.0.0-371.zip",
-    "hash": "sha1:2f32241dde0dacd351f92e9f71a880b26dbbca34",
+    "version": "9.0.0.0-423",
+    "url": "https://downloads.sourceforge.net/project/pentaho/Pentaho%209.0/client-tools/pad-ce-9.0.0.0-423.zip",
+    "hash": "sha1:05847a915a69761b94eac7d37fef10523940bd0f",
     "extract_dir": "aggregation-designer",
     "bin": "startaggregationdesigner.bat",
     "shortcuts": [
@@ -36,10 +36,6 @@
         "re": "Pentaho\\s+[\\d.]+/client-tools/pad-ce-([\\w.-]+)\\.zip"
     },
     "autoupdate": {
-        "url": "https://downloads.sourceforge.net/project/pentaho/Pentaho%20$majorVersion.$minorVersion/client-tools/pad-ce-$version.zip",
-        "hash": {
-            "url": "$url.sum",
-            "regex": "SHA1=$sha1"
-        }
+        "url": "https://downloads.sourceforge.net/project/pentaho/Pentaho%20$majorVersion.$minorVersion/client-tools/pad-ce-$version.zip"
     }
 }
